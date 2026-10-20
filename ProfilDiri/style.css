@@ -1,0 +1,246 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+            line-height: 1.7;
+        }
+
+        /* HEADER */
+        header {
+            text-align: center;
+            padding: 45px 20px;
+            background: linear-gradient(135deg, #1d4ed8, #0f172a);
+            border-bottom: 1px solid #334155;
+        }
+
+        header h1 {
+            font-size: 32px;
+            color: white;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            color: #bfdbfe;
+            margin-top: 8px;
+        }
+
+        /* NAVBAR */
+        nav {
+            background: #111c32;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            border-bottom: 1px solid #334155;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            list-style: none;
+            gap: 8px;
+            padding: 12px;
+        }
+
+        nav a {
+            color: #cbd5e1;
+            text-decoration: none;
+            padding: 9px 15px;
+            display: block;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background: #2563eb;
+            color: white;
+        }
+
+        /* KONTEN UTAMA */
+        main {
+            max-width: 1100px;
+            margin: 35px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: #1e293b;
+            margin-bottom: 30px;
+            padding: 28px;
+            border-radius: 16px;
+            border: 1px solid #334155;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            scroll-margin-top: 90px;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        section:hover {
+            border-color: #3b82f6;
+            transform: translateY(-3px);
+        }
+
+        h2 {
+            color: #60a5fa;
+            font-size: 24px;
+            margin-bottom: 22px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #334155;
+        }
+
+        /* BIODATA */
+        #biodata {
+            text-align: center;
+        }
+
+        #biodata img {
+            width: 150px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 18px;
+            border: 3px solid #60a5fa;
+            margin-bottom: 15px;
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.2);
+        }
+
+        #biodata h3 {
+            color: white;
+            font-size: 23px;
+            margin-bottom: 15px;
+        }
+
+        #biodata p {
+            text-align: left;
+            max-width: 500px;
+            margin: 7px auto;
+            padding: 8px 12px;
+            background: #263449;
+            border-radius: 7px;
+        }
+
+        #biodata strong {
+            color: #93c5fd;
+        }
+
+        /* ORGANISASI */
+        #organisasi ul {
+            padding-left: 22px;
+        }
+
+        #organisasi li {
+            margin-bottom: 15px;
+            padding: 15px;
+            background: #263449;
+            border-left: 4px solid #3b82f6;
+            border-radius: 8px;
+        }
+
+        #organisasi strong {
+            color: #93c5fd;
+        }
+
+        /* TABEL JADWAL */
+        .table-container {
+            width: 100%;
+            overflow-x: auto;
+            border-radius: 10px;
+        }
+
+        table {
+            width: 100%;
+            min-width: 850px;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+
+        thead {
+            background: #2563eb;
+            color: white;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #475569;
+        }
+
+        tbody tr {
+            background: #1e293b;
+            transition: background 0.2s;
+        }
+
+        tbody tr:nth-child(even) {
+            background: #263449;
+        }
+
+        tbody tr:hover {
+            background: #334e75;
+        }
+
+        .total-sks {
+            margin-top: 18px;
+            padding: 12px 16px;
+            display: inline-block;
+            background: #1d4ed8;
+            color: white;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 25px 15px;
+            margin-top: 40px;
+            background: #111c32;
+            color: #94a3b8;
+            border-top: 1px solid #334155;
+        }
+
+        footer span {
+            color: #60a5fa;
+        }
+
+        /* RESPONSIVE HP */
+        @media (max-width: 600px) {
+            header {
+                padding: 32px 15px;
+            }
+
+            header h1 {
+                font-size: 25px;
+            }
+
+            nav ul {
+                gap: 3px;
+            }
+
+            nav a {
+                padding: 7px 9px;
+                font-size: 13px;
+            }
+
+            main {
+                padding: 0 12px;
+                margin-top: 20px;
+            }
+
+            section {
+                padding: 18px;
+                border-radius: 12px;
+            }
+
+            h2 {
+                font-size: 21px;
+            }
+
+            #biodata h3 {
+                font-size: 20px;
+            }
+          }
